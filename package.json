@@ -1,0 +1,31 @@
+{
+  "name": "xena-initializer",
+  "description": "Later",
+  "version": "0.0.4",
+  "main": "index.js",
+  "author": "Ivaylo Ivanov <Ivchoyyyy@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ivaylopivanov/xena-initializer"
+  },
+  "bugs": {
+    "url": "https://github.com/ivaylopivanov/xena-initializer"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "config": {},
+  "scripts": {
+    "test": "node_modules/.bin/mocha ./tests/*.js"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "xena-errors": "^0.3.0",
+    "xena-logger": "0.0.4"
+  }
+}
