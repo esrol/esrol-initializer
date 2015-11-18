@@ -1,15 +1,15 @@
 {
-  "name": "xena-initializer",
+  "name": "esrol-initializer",
   "description": "Later",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "index.js",
   "author": "Ivaylo Ivanov <Ivchoyyyy@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ivaylopivanov/xena-initializer"
+    "url": "git://github.com/esrol/esrol-initializer"
   },
   "bugs": {
-    "url": "https://github.com/ivaylopivanov/xena-initializer"
+    "url": "https://github.com/esrol/esrol-initializer"
   },
   "license": "MIT",
   "keywords": [],
@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "debug": "^2.2.0",
-    "xena-errors": "^0.3.0"
+    "esrol-errors": "^0.3.4"
   }
 }

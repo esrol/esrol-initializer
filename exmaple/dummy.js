@@ -1,5 +1,5 @@
 'use strict';
-let Initializer = require('xena-initializer');
+let Initializer = require('esrol-initializer');
 let initializer = new Initializer();
 
 let foo = {
