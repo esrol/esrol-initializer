@@ -1,7 +1,7 @@
 {
   "name": "esrol-initializer",
   "description": "An Initializer Class used for adding and initializing components. Priority must exist between them.",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "index.js",
   "author": "Ivaylo Ivanov <ivaylo.ivanov.ipi@gmail.com>",
   "repository": {
