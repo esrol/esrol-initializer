@@ -1,4 +1,6 @@
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Test coverage][coveralls-image]][coveralls-url]
 
 # esrol-initializer
 An Initializer Class used for adding and initializing components. Priority must exist between them.
@@ -82,9 +84,9 @@ components with the new one.</p>
 </dl>
 <a name="Initializer"></a>
 ## Initializer
-**Kind**: global class  
-**Access:** public  
-**Author:** Ivaylo Ivanov  
+**Kind**: global class
+**Access:** public
+**Author:** Ivaylo Ivanov
 <a name="new_Initializer_new"></a>
 ### new Initializer()
 An Initializer Class used for adding and initializing
@@ -95,12 +97,12 @@ components. Priority must exist between them.
 Set a callback which will be called when all components are
 resolved.
 
-**Returns**: <code>boolean</code> - true - on success  
+**Returns**: <code>boolean</code> - true - on success
 **Throws**:
 
 - <code>error</code> error - if parameter is not a function
 
-**Access:** public  
+**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -111,12 +113,12 @@ resolved.
 Register a new component object. Re-sort (re-prioritize)
 components with the new one.
 
-**Returns**: <code>boolean</code> - true - on success  
+**Returns**: <code>boolean</code> - true - on success
 **Throws**:
 
 - <code>error</code> error - if component object isn't as expected
 
-**Access:** public  
+**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -126,7 +128,7 @@ components with the new one.
 ## instantiateComponents()
 Instantiate all components.
 
-**Access:** public  
+**Access:** public
 
 ## Tests
 
@@ -142,11 +144,10 @@ $ npm test
 [MIT](https://github.com/esrol/esrol-initializer/blob/master/LICENSE)
 
 
+
 [npm-image]: https://badge.fury.io/js/esrol-initializer.svg
 [npm-url]: https://npmjs.org/package/esrol-initializer
-[travis-image]: https://travis-ci.org/ivaylopivanov/esrol-initializer.svg?branch=master
-[travis-url]: https://travis-ci.org/ivaylopivanov/esrol-initializer
-[daviddm-image]: https://david-dm.org/ivaylopivanov/esrol-initializer.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/ivaylopivanov/esrol-initializer
-[coveralls-image]: https://coveralls.io/repos/ivaylopivanov/esrol-initializer/badge.svg
-[coveralls-url]: https://coveralls.io/r/ivaylopivanov/esrol-initializer
+[travis-image]: https://travis-ci.org/esrol/esrol-initializer.svg?branch=master
+[travis-url]: https://travis-ci.org/esrol/esrol-initializer
+[coveralls-image]: https://coveralls.io/repos/esrol/esrol-initializer/badge.svg
+[coveralls-url]: https://coveralls.io/r/esrol/esrol-initializer
