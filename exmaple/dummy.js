@@ -1,17 +1,17 @@
 'use strict';
-let Initializer = require('esrol-initializer');
+let Initializer = require('../lib/initializer');
 let initializer = new Initializer();
 
 let foo = {
   priority: 1,
   component: function() {
-    console.log('foo component is resolved');        
+    console.log('foo component is resolved');
   }
 };
 
 let promise = new Promise((resolve, reject) => {
   // some async stuff
-  setTimeout(() => {    
+  setTimeout(() => {
     resolve();
   }, 500);
 });
@@ -31,7 +31,7 @@ let promisifiedComponent = {
 let bar = {
   priority: 3,
   component: function() {
-    console.log('bar component is resolved');  
+    console.log('bar component is resolved');
   }
 };
 

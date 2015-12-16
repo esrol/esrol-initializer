@@ -12,9 +12,9 @@ describe('Initializer Success...', () => {
       expect(initializer.registerComponent(mocks.lastComponent))
       .to.be.true;
       expect(initializer.registerComponent(mocks.promisedComponent))
-      .to.be.true;      
+      .to.be.true;
       expect(initializer.registerComponent(mocks.firstComponent))
-      .to.be.true; 
+      .to.be.true;
     });
   });
 
@@ -26,7 +26,7 @@ describe('Initializer Success...', () => {
 
   describe('When instantiateComponents is called, must output 1, 2, 3', () => {
     beforeEach(function() { this.sinon.stub(console, 'log'); });
-    it('', () => {
+    it('Should output "1", "2", "3" and "callback called"', () => {
       initializer.instantiateComponents();
       expect( console.log.calledWith('1') ).to.be.true;
       expect( console.log.calledWith('2') ).to.be.true;
@@ -37,11 +37,31 @@ describe('Initializer Success...', () => {
 
 });
 
+describe('Initializer without callback', () => {
+  let init = new Initializer();
+  init.registerComponent(mocks.lastComponent);
+  beforeEach(function() { this.sinon.stub(console, 'log'); });
+  it('Should console.log from "lastComponent"', () => {
+      init.instantiateComponents();
+      expect( console.log.calledWith('3') ).to.be.true;
+  });
+});
+
+
+
 describe('Initializer Fail...', () => {
 
   let should = 'Throw an error';
 
-  describe('When registerComponent with non object as param', () => {
+  describe('When registerComponent with no argument', () => {
+    it(should, () => {
+      expect(() => {
+        initializer.registerComponent();
+      }).to.throw(Error);
+    });
+  });
+
+  describe('When registerComponent with non object as argument', () => {
     it(should, () => {
       expect(() => {
         initializer.registerComponent(() => {});
@@ -55,7 +75,7 @@ describe('Initializer Fail...', () => {
         initializer.registerComponent({component: () => {}});
       }).to.throw(Error);
     });
-  });  
+  });
 
   describe('When registerComponent without component property', () => {
     it(should, () => {
@@ -63,7 +83,7 @@ describe('Initializer Fail...', () => {
         initializer.registerComponent({priority: () => {}});
       }).to.throw(Error);
     });
-  }); 
+  });
 
   describe('When registerComponent with non fn as component property', () => {
     it(should, () => {
@@ -71,12 +91,12 @@ describe('Initializer Fail...', () => {
         initializer.registerComponent({priority: 2, component: 'string'});
       }).to.throw(Error);
     });
-  });  
+  });
 
-  describe('When setCallback is called with non function as param', () => {
+  describe('When setCallback is called with non function as argument', () => {
     it(should, () => {
-      expect(() => { initializer.setCallback({}); }).to.throw(Error);      
+      expect(() => { initializer.setCallback({}); }).to.throw(Error);
     });
-  });       
-  
+  });
+
 });

@@ -1,8 +1,8 @@
 #To do
 - [ ] Set comments
-- [ ] Build
-- [ ] Tests
-- [ ] Examples
+- [x] Build
+- [x] Tests
+- [x] Examples
 - [ ] Coverage
 - [ ] Update readme
 - [ ] Update version
