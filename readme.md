@@ -5,6 +5,7 @@
 # esrol-initializer
 An Initializer Class used for adding and initializing components. Priority must exist between them.
 
+*Part of [Esrol](https://github.com/esrol/esrol)*
 
 ## Installation
 
@@ -63,12 +64,7 @@ initializer.registerComponent(bar);
 initializer.instantiateComponents();
 ```
 
-## Classes
-<dl>
-<dt><a href="#Initializer">Initializer</a></dt>
-<dd></dd>
-</dl>
-## Functions
+## Methods
 <dl>
 <dt><a href="#setCallback">setCallback(fn)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Set a callback which will be called when all components are
@@ -82,16 +78,6 @@ components with the new one.</p>
 <dd><p>Instantiate all components.</p>
 </dd>
 </dl>
-<a name="Initializer"></a>
-## Initializer
-**Kind**: global class
-**Access:** public
-**Author:** Ivaylo Ivanov
-<a name="new_Initializer_new"></a>
-### new Initializer()
-An Initializer Class used for adding and initializing
-components. Priority must exist between them.
-
 <a name="setCallback"></a>
 ## setCallback(fn) ⇒ <code>boolean</code>
 Set a callback which will be called when all components are
@@ -102,7 +88,6 @@ resolved.
 
 - <code>error</code> error - if parameter is not a function
 
-**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -118,7 +103,6 @@ components with the new one.
 
 - <code>error</code> error - if component object isn't as expected
 
-**Access:** public
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -128,7 +112,15 @@ components with the new one.
 ## instantiateComponents()
 Instantiate all components.
 
-**Access:** public
+## Contriubtion
+
+Any contribution will be highly appreciated. Just make sure that:
+
+1. Your code works.  
+2. You have 100% successful tests coverage.  
+3. You have comments in your code.  
+4. Follows eslint config. Exceptions are possible where that make sense.  
+
 
 ## Tests
 
@@ -142,7 +134,6 @@ $ npm test
 ## License
 
 [MIT](https://github.com/esrol/esrol-initializer/blob/master/LICENSE)
-
 
 
 [npm-image]: https://badge.fury.io/js/esrol-initializer.svg
