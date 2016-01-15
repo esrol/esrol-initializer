@@ -17,17 +17,17 @@ $ npm install --save esrol-initializer
 
 ```js
 'use strict';
-let Initializer = require('../lib/initializer');
-let initializer = new Initializer();
+const Initializer = require('esrol-initializer');
+const initializer = new Initializer();
 
-let foo = {
+const foo = {
   priority: 1,
   component: function() {
     console.log('foo component is resolved');
   }
 };
 
-let promise = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
   // some async stuff
   setTimeout(() => {
     resolve();
@@ -38,7 +38,7 @@ promise.then(() => {
   console.log('promisified component is resolved');
 });
 
-let promisifiedComponent = {
+const promisifiedComponent = {
   priority: 2,
   component: function() {
     console.log('promisified component is instantiated');
@@ -46,14 +46,14 @@ let promisifiedComponent = {
   }
 };
 
-let bar = {
+const bar = {
   priority: 3,
   component: function() {
     console.log('bar component is resolved');
   }
 };
 
-let onResolvedComponents = function() {
+const onResolvedComponents = function() {
   console.log('all components are resolved');
 };
 
@@ -62,6 +62,7 @@ initializer.registerComponent(promisifiedComponent);
 initializer.registerComponent(foo);
 initializer.registerComponent(bar);
 initializer.instantiateComponents();
+
 ```
 
 ## Methods
